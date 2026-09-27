@@ -4,6 +4,7 @@ import BookSection from "@/components/BookSection";
 import MethodSection from "@/components/MethodSection";
 import PathSection from "@/components/PathSection";
 import AuthorsSection from "@/components/AuthorsSection";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import { BuyProvider } from "@/components/BuyDialog";
 
@@ -28,6 +29,7 @@ export default function Home() {
         <MethodSection />
         <PathSection />
         <AuthorsSection />
+        <ContactSection />
 
         {/*
         <TracksSection

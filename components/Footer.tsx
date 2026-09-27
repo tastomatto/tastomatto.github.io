@@ -8,6 +8,7 @@ const LINKS = [
   { href: "#metodo", label: "Il metodo" },
   { href: "#percorso", label: "Il percorso" },
   { href: "#autori", label: "Autori" },
+  { href: "#contatti", label: "Contatti" },
   // Sezioni disattivate (vedi app/page.tsx):
   // { href: "#brani", label: "Brani" },
   // { href: "#improvvisa", label: "Improvvisa" },
