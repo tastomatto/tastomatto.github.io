@@ -8,7 +8,7 @@ export const SITE = {
   title: "Tasto Matto",
   tagline: "Metodo di pianoforte per bambini",
   buyLabel: "Acquista il libro",
-  email: "ciao@tastomatto.it",
+  email: "tastomatto.edu@gmail.com",
 };
 
 /** Dati editoriali, dal colophon del libro. */

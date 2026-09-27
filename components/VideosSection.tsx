@@ -63,7 +63,7 @@ export default function VideosSection() {
           <p className="font-body text-ink/55">
             Anche il tuo bimbo suona con Tasto Matto?{" "}
             <a
-              href="mailto:ciao@tastomatto.it"
+              href="mailto:tastomatto.edu@gmail.com"
               className="font-600 text-grape underline decoration-wavy underline-offset-4"
             >
               Inviaci il suo video
