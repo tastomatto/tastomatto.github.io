@@ -19,7 +19,7 @@ export default function AuthorsSection() {
             Gli autori
           </h2>
           <p className="mt-4 font-body text-lg leading-relaxed text-ink/70">
-            Due musicisti e insegnanti che hanno voluto un metodo in cui
+            Due musicisti e insegnanti che hanno realizzato un metodo in cui
             musica, creatività e pedagogia si incontrano.
           </p>
         </Reveal>
