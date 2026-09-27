@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-fredoka: "Fredoka", system-ui, sans-serif;
-  --font-nunito: "Nunito", system-ui, sans-serif;
-  --font-baloo: "Baloo 2", system-ui, cursive;
-}
-
 @layer base {
   html {
     scroll-behavior: smooth;

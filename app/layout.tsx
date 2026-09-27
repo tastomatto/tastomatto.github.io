@@ -1,24 +1,26 @@
 import type { Metadata } from "next";
-import { Baloo_2, Fredoka, Nunito } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const fredoka = Fredoka({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+// Font locali (variabili, sottoinsieme latino, licenza OFL in ./fonts): la
+// build non scarica nulla da Google Fonts, quindi funziona anche in CI.
+const fredoka = localFont({
+  src: "./fonts/fredoka.woff2",
+  weight: "300 700",
   variable: "--font-fredoka",
   display: "swap",
 });
 
-const baloo = Baloo_2({
-  subsets: ["latin"],
-  weight: ["700", "800"],
+const baloo = localFont({
+  src: "./fonts/baloo-2.woff2",
+  weight: "400 800",
   variable: "--font-baloo",
   display: "swap",
 });
 
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+const nunito = localFont({
+  src: "./fonts/nunito.woff2",
+  weight: "200 1000",
   variable: "--font-nunito",
   display: "swap",
 });
