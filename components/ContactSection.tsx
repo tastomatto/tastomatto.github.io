@@ -44,7 +44,7 @@ export default function ContactSection() {
               Scrivici, ti risponderemo il prima possibile.
             </p>
             <p className="mt-6 font-body text-ink/70">
-              Oppure all’indirizzo{" "}
+              Oppure all’indirizzo<br/>{" "}
               <a
                 href={`mailto:${SITE.email}`}
                 className="break-all font-700 text-ink underline decoration-ink/30 decoration-2 underline-offset-4 transition-colors hover:decoration-ink"
