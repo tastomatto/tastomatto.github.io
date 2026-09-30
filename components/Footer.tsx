@@ -59,7 +59,12 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 space-y-1 font-body text-sm text-white/50">
-          <p>{BOOK.copyright}. Tutti i diritti sono riservati.</p>
+          <p>
+            {BOOK.copyright}. Tutti i diritti sono riservati. ·{" "}
+            <a href="/privacy" className="underline underline-offset-2 transition-colors hover:text-lime">
+              Privacy policy
+            </a>
+          </p>
           <p>
             Grafica di copertina: {BOOK.coverArt}. ISBN {BOOK.isbn}. Imprint:{" "}
             {BOOK.imprint}.
