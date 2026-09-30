@@ -24,14 +24,15 @@ export type Store = {
   name: string;
   url: string;
   description: string;
+  /** Non ancora in vendita: mostrato come "Presto disponibile", non cliccabile */
+  comingSoon?: boolean;
 };
 
 /** Negozi in cui si può acquistare il libro, mostrati nel dialog "Acquista". */
 export const STORES: { lulu: Store; amazon: Store } = {
   lulu: {
     name: "Lulu",
-    // TODO: inserisci il link diretto alla pagina del libro su Lulu
-    url: "https://www.lulu.com/",
+    url: "https://www.lulu.com/shop/federico-matteo-marcucci-and-laura-pappalardo/tasto-matto/paperback/product-7k5qqkq.html",
     description: "Stampato su richiesta e spedito da Lulu.",
   },
   amazon: {
@@ -39,6 +40,7 @@ export const STORES: { lulu: Store; amazon: Store } = {
     // TODO: inserisci il link diretto alla pagina del libro su Amazon
     url: "https://www.amazon.it/",
     description: "Comodo se acquisti già su Amazon.",
+    comingSoon: true,
   },
 };
 

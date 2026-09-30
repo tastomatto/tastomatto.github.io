@@ -58,7 +58,7 @@ export function BuyProvider({ children }: { children: ReactNode }) {
                 Dove vuoi acquistarlo?
               </h2>
               <p id="buy-desc" className="mt-1 font-body text-ink/70">
-                {SITE.title} è disponibile su due negozi online.
+                {SITE.title} è disponibile su Lulu, e presto anche su Amazon.
               </p>
             </div>
             <button
@@ -102,6 +102,23 @@ function StoreLink({
   store: Store;
   recommended?: boolean;
 }) {
+  if (store.comingSoon) {
+    return (
+      <div className="flex items-center gap-4 rounded-2xl border-[3px] border-dashed border-ink/10 bg-white/40 p-4 sm:p-5">
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span className="font-display text-2xl font-700 text-ink/50">
+              {store.name}
+            </span>
+            <span className="inline-flex items-center rounded-full bg-ink/5 px-2.5 py-0.5 font-display text-sm font-600 text-ink/60">
+              Presto disponibile
+            </span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <a
       href={store.url}
